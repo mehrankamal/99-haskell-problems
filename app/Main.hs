@@ -1,6 +1,11 @@
 module Main where
 
-import Lib
+import Lib (lastElement)
 
 main :: IO ()
-main = someFunc
+main = do
+  putStrLn "Problem 01: Print last element of a given list"
+  print inputList
+  print (lastElement inputList)
+  where
+    inputList = [1, 4, 20, 12]

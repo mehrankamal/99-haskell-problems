@@ -1,6 +1,6 @@
 module Lib
-    ( someFunc
+    ( lastElement
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+lastElement :: [Integer] -> Integer
+lastElement = last
